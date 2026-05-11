@@ -11,6 +11,15 @@ export default {
           700: '#0369a1',
         },
       },
+      keyframes: {
+        'slide-up': {
+          from: { opacity: '0', transform: 'translateY(12px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'slide-up': 'slide-up 0.2s ease-out',
+      },
     },
   },
   plugins: [],

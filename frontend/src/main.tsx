@@ -6,6 +6,7 @@ import CitizenPortal from './pages/CitizenPortal'
 import TrackComplaint from './pages/TrackComplaint'
 import OfficerDashboard from './pages/OfficerDashboard'
 import AdminAnalytics from './pages/AdminAnalytics'
+import { ToastContainer } from './components/Toast'
 import './index.css'
 
 function PrivateRoute({ children }: { children: React.ReactNode }) {
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/officer" element={<PrivateRoute><OfficerDashboard /></PrivateRoute>} />
         <Route path="/admin" element={<PrivateRoute><AdminAnalytics /></PrivateRoute>} />
       </Routes>
+      <ToastContainer />
     </BrowserRouter>
   </React.StrictMode>
 )
